@@ -1,0 +1,44 @@
+<html>
+<head>
+    <title>
+        welcome
+    </title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body onload="typeWriter()">
+    <div id="main">      
+        <div id="div-center">
+            <h1 style="color: white; font-family: broadway" id="demo"></h1>
+            <button id="resume-btn" >
+                <a href="info.html" style="color: white;">See my resume </a>
+            </button>   
+            
+        </div>
+    </div>
+
+
+    <script>
+        var i = 0;
+        var j=1000000;
+        var txt = "Abhishek's Professional Space";
+        var speed = 50;
+
+        function typeWriter() 
+        {
+
+          if (i < txt.length) {
+            document.getElementById("demo").innerHTML += txt.charAt(i);
+            i++;
+            setTimeout(typeWriter, speed);
+        }
+    }
+</script>
+
+
+
+
+
+
+
+</body>
+</html>
